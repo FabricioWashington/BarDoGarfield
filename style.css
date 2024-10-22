@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+@font-face {
+    font-family: Aller;
+    src: url(font/leaguespartan-bold.ttf);
+}
+
+@font-face {
+    font-family: Paragrafo;
+    src: url(font/AdventPro-VariableFont_wdth\,wght.ttf);
+}
+
+h1, h2 {
+    font-family: Aller;
+}
+
+p {
+    font-family: Aller;
+}
+
+li {
+    font-family: Aller
+}
+
+header {
+    background-color: #ff8a00; /* Laranja */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.banner {
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse a área da banner */
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px; /* Define uma altura máxima para o banner */
+    object-fit: cover; /* Ajusta a imagem para cobrir o espaço */
+}
+
+.logo h1 {
+    margin: 10px 0;
+}
+
+nav {
+    background-color: #3cb043; /* Verde */
+    width: 1500px;
+    margin: auto;
+    border-radius: 12px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+nav ul li {
+    display: inline; /* Mantém os itens em linha */
+}
+
+nav a {
+    display: inline-block; /* Permite aplicar padding e outras propriedades */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px; /* Cantos arredondados */
+    background-color: #3cb043; /* Verde */
+    transition: background-color 0.3s ease; /* Suaviza a transição de cor */
+    margin: 0 10px; /* Espaçamento lateral entre os botões */
+}
+
+nav a:hover {
+    background-color: #156313; /* Laranja ao passar o mouse */
+    color: white; /* Mantém a letra branca no hover */
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 40px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #ff8a00; /* Laranja */
+    color: white;
+}
+
+h2 {
+    color: #3cb043; /* Verde */
+}
+
+. {
+    
+    display: block; /* Faz a imagem ser um bloco */
+    margin-left: auto; /* Margem automática à esquerda */
+    margin-right: auto; /* Margem automática à direita */
+    max-width: 100%; /* Faz a imagem responsiva */
+    height: auto; /* Mantém a proporção */
+    
+}
+
+#cardapio{
+    margin: 0;
+    padding: 0;
+}
+
+.container-card-galeria {
+    display: flex;
+    justify-content: space-between; /* Espalha os cards uniformemente */
+    flex-wrap: wrap; /* Quebra os cards para a próxima linha se necessário */
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.card-galeria {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    flex: 1 1 calc(25% - 40px); /* Faz com que o card ocupe 25% da linha, considerando margens */
+    background-color: #fff;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    color: #000;
+    box-sizing: border-box; /* Garante que padding e margin sejam incluídos no tamanho total */
+}
+
+.card-galeria img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.card-galeria h2 {
+    font-size: 24px;
+    font-family: Aller;
+}
+
+.card-galeria p {
+    font-size: 16px;
+    font-family: Aller;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap; /* Permite que as imagens "quebrem" para a próxima linha se necessário */
+    gap: 10px; /* Espaço entre as imagens */
+    justify-content: center; 
+}
+.galeria img {
+    width: calc(25% - 10px); /* Cada imagem ocupa 25% da largura, subtraindo o espaço entre elas */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; 
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra ao redor das imagens */
+    transition: transform 0.3s ease; /* Adiciona uma transição mais suave para o efeito hover */
+}
+.galeria img:hover {
+    transform: scale(1.05); /* Aumenta um pouco o tamanho da imagem ao passar o mouse */
+}
+@media (max-width: 768px) {
+    .galeria img {
+        width: calc(50% - 10px); /* Ajusta para 50% da tela em dispositivos menores */
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+.semicirculo-direita {
+    width: 390px;
+    height: 672px;
+    background-color: #f4891f;
+    border-top-right-radius: 330px;
+    border-bottom-right-radius: 330px;
+    margin: 20px ; 
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    /* padding: 20px; */
+    max-width: 1200px;
+    margin: 0;
+}
+
+.menu-up {
+    flex: 2;
+    padding: 20px;
+}
+
+.menu-down{
+    flex: 2;
+    padding: 20px;
+}
+
+.menu-section {
+    margin-bottom: 30px;
+}
+
+.menu-section h2 {
+    color: #f4891f;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style: none;
+}
+
+.linha-laranja {
+    border: 0;
+    height: 2px; /* Define a espessura da linha */
+    background-color: #f4891f; /* Define a cor laranja */
+    margin: 20px 0; /* Define espaçamento acima e abaixo */
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    padding: 5px 0;
+}
+
+li span {
+    color: #666;
+}
+
+#form-contato {
+    background-color: #fff; /* Fundo branco */
+    padding: 20px;
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin: 20px 0; /* Margem superior e inferior */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Espaçamento entre os grupos de campo */
+}
+
+label {
+    font-family: Aller;
+    color: #3cb043; /* Verde */
+    display: block; /* Faz o label ocupar a linha inteira */
+    margin-bottom: 5px; /* Espaçamento abaixo do label */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Largura total do campo */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 5px; /* Cantos arredondados */
+    font-family: Paragrafo; /* Fonte do campo */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: border-color 0.3s; /* Transição suave na borda */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #3cb043; /* Cor da borda ao focar */
+}
+
+button {
+    background-color: #3cb043; /* Verde */
+    color: white; /* Texto branco */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Cantos arredondados */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    transition: background-color 0.3s; /* Suaviza a transição de cor */
+}
+
+button:hover {
+    background-color: #156313; /* Verde escuro ao passar o mouse */
+}
+
