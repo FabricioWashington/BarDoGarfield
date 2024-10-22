@@ -274,7 +274,7 @@ label {
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 100%; /* Largura total do campo */
+    width: 100%; 
     padding: 10px; /* Espaçamento interno */
     border: 1px solid #ccc; /* Borda cinza */
     border-radius: 5px; /* Cantos arredondados */
@@ -290,7 +290,7 @@ textarea:focus {
 }
 
 button {
-    background-color: #3cb043; /* Verde */
+    background-color: #3cb043; 
     color: white; /* Texto branco */
     padding: 10px 20px; /* Espaçamento interno do botão */
     border: none; /* Remove a borda padrão */
