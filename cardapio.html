@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio - Bar do Garfield</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #ff8a00;
+        }
+
+        footer {
+            background-color: #3cb043;
+        }
+
+        .navbar-dark .navbar-nav .nav-link.active,
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: #fff !important;
+        }
+
+        .navbar-brand {
+            color: #fff !important;
+        }
+
+        .section-title {
+            color: #ff8a00;
+        }
+
+        .nav-link {
+            color: white !important;
+        }
+
+        .menu-section h2 {
+            color: #ff8a00;
+        }
+
+        .menu-section hr {
+            border-color: #ff8a00;
+        }
+
+        .menu-section ul li {
+            color: #3cb043;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="text-white p-3">
+        <div class="container">
+            <img src="img/Design sem nome.png" alt="Banner do Bar do Garfield" class="img-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Bar do Garfield</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="sobre.html">Sobre Nós</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="servicos.html">Serviços</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="cardapio.html">Cardápio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contato.html">Contatos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="cardapio" class="container py-5">
+            <h2 class="section-title">Cardápio</h2>
+
+            <div class="row">
+                <!-- Cardápio de Hambúrgueres -->
+                <div class="col-md-4">
+                    <div class="menu-section">
+                        <h2>HAMBÚRGUER</h2>
+                        <hr class="linha-laranja">
+                        <ul>
+                            <li>Cheeseburger <span>10.00</span></li>
+                            <li>Bacon Burger <span>8.70</span></li>
+                            <li>Veggie Burger <span>11.60</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Cardápio de Pizzas -->
+                <div class="col-md-4">
+                    <div class="menu-section">
+                        <h2>PIZZA</h2>
+                        <hr class="linha-laranja">
+                        <ul>
+                            <li>Calabresa <span>9.00</span></li>
+                            <li>Frango com catupiry <span>11.70</span></li>
+                            <li>Portuguesa <span>8.60</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Cardápio de Fritos -->
+                <div class="col-md-4">
+                    <div class="menu-section">
+                        <h2>FRITOS</h2>
+                        <hr class="linha-laranja">
+                        <ul>
+                            <li>Batata frita <span>9.00</span></li>
+                            <li>Onion rings <span>10.70</span></li>
+                            <li>Frango à passarinho <span>11.60</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Cardápio de Sobremesas -->
+                <div class="col-md-4">
+                    <div class="menu-section">
+                        <h2>SOBREMESAS</h2>
+                        <hr class="linha-laranja">
+                        <ul>
+                            <li>Brownie com sorvete <span>11.00</span></li>
+                            <li>Cheesecake <span>10.70</span></li>
+                            <li>Petit gâteau <span>9.60</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Cardápio de Bebidas Alcoólicas -->
+                <div class="col-md-4">
+                    <div class="menu-section">
+                        <h2>ALCOÓLICAS</h2>
+                        <hr class="linha-laranja">
+                        <ul>
+                            <li>Caipirinha <span>9.00</span></li>
+                            <li>Mojito <span>7.70</span></li>
+                            <li>Cerveja artesanal <span>5.60</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Cardápio de Bebidas Sem Álcool -->
+                <div class="col-md-4">
+                    <div class="menu-section">
+                        <h2>SEM ÁLCOOL</h2>
+                        <hr class="linha-laranja">
+                        <ul>
+                            <li>Suco de laranja <span>12.00</span></li>
+                            <li>Chá gelado <span>13.70</span></li>
+                            <li>Refrigerante <span>10.60</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Bar do Garfield. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
